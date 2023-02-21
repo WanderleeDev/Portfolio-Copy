@@ -1,18 +1,47 @@
 .bodyPage{
-  height: 100vh;
-  display: grid;
+  /* display: grid;
   grid-template-areas: "header header header header header header"
              "main main main main main main"
              "footer footer footer footer footer footer";
-  grid-auto-rows: auto;
+  grid-auto-rows: auto; */
+  background-color: #E5E5E5;
 }
+/* nav */
 .mainHeader{
   grid-area: header;
-  background-color: antiquewhite;
 }
+.navbar{
+}
+.navbar__list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar__item{
+
+}
+.navbar__starsImg{
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: url(/aseets/img/vector.png);
+}
+.navbar__item{
+
+}
+.navbar__subList{
+  display: none;
+}
+.subList__item{
+
+}
+.subList__link{
+
+}
+
 .mainContent{
   grid-area: main;
-  background-color: cadetblue;
+  overflow: hidden;
 }
 .footerPage{
   grid-area: footer;
