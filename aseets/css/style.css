@@ -1,0 +1,20 @@
+.bodyPage{
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header header header header header header"
+             "main main main main main main"
+             "footer footer footer footer footer footer";
+  grid-auto-rows: auto;
+}
+.mainHeader{
+  grid-area: header;
+  background-color: antiquewhite;
+}
+.mainContent{
+  grid-area: main;
+  background-color: cadetblue;
+}
+.footerPage{
+  grid-area: footer;
+  background-color: cornflowerblue;
+}
