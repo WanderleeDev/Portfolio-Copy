@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/normalizeV8.0.1.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Portafolio</title>
-  <link rel="stylesheet" href="./aseets/css/normalizeV8.0.1.css">
-  <link rel="stylesheet" href="./aseets/css/style.css">
 </head>
 <body class="bodyPage">
   <header class="mainHeader">
     <nav class="navbar">
       <ul class="navbar__list">
-        <li class="navbar__item">
+        <li class="navbar__item navbar__item--bold">
           <div class="navbar__starsImg"></div>
-          <a  class="navbar__item" href="#">Fulano de tal</a>
+          <a  class="navbar__link" href="#">Fulano de tal</a>
         </li>
         <li>
           <ul class="navbar__subList subList">
@@ -36,33 +40,37 @@
           </ul>
         </li>
         <li class="navbar__item">
-          <a  class="navbar__item" href="#">wanderledev@gmail.com</a>
+          <a  class="navbar__link" href="#">wanderledev@gmail.com</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="mainContent">
     <!-- Presentación -->
-    <section class="SectionPresentation">
+    <section class="sectionPresentation">
       <header>
-        <img class="SectionPresentation__myPhoto" src="./aseets/img/profile.png" alt="mi foto personal">
-        <h1 class="SectionPresentation__title">Hola mi nombre es Fulana de Tal y construyo paginas web</h1>
+        <img class="sectionPresentation__myPhoto" src="./assets/img/profile.png" alt="mi foto personal">
+        <h1 class="sectionPresentation__title">Hola mi nombre es Fulana de Tal y construyo paginas web</h1>
       </header>
-      <div class="SectionPresentation__description">
+      <div class="sectionPresentation__description">
         Soy formada en lorem ipsum  sit amet consectetur y actualmente estoy participando en el proyecto Oracle One en Alura Latam.
       </div>
       <ul class="socialMedia">
         <li class="socialMedia__item">
           <a href="#" class="socialMedia__link">Github</a>
+          <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
         </li>
         <li class="socialMedia__item">
           <a href="#" class="socialMedia__link">LinkedIn</a>
+          <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
         </li>
         <li class="socialMedia__item">
           <a href="#" class="socialMedia__link">Instagram</a>
+          <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
         </li>
         <li class="socialMedia__item">
           <a href="#" class="socialMedia__link">Currículo</a>
+          <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
         </li>
       </ul>
     </section>
@@ -81,7 +89,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
         </p>
       </div>
-      <img class="sectionAboutMe__mySignature" src="./aseets/img/signature.png" alt="firma personal">
+      <img class="sectionAboutMe__mySignature" src="./assets/img/signature.png" alt="firma personal">
     </section>
     <!-- skills -->
     <section class="sectionSkills">
@@ -91,32 +99,32 @@
       <div class="sectionSkills__gallery gallery">
         <!-- skill 1 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/htlm.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/htlm.png" alt="tecnología-web">
           <figcaption class="gallery__description">Html 5</figcaption>
         </figure>
         <!-- skill 2 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/js_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/js_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">Javascript</figcaption>
         </figure>
         <!-- skill 3 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/php_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/php_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">PHP</figcaption>
         </figure>
         <!-- skill 4 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/nodejs_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/nodejs_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">Node Js</figcaption>
         </figure>
         <!-- skill 5 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/react_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/react_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">React</figcaption>
         </figure>
         <!-- skill 6 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/css_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/css_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">CSS</figcaption>
         </figure>
       </div>
@@ -124,37 +132,37 @@
     <!-- hobbies -->
     <section class="sectionHobbies">
       <header>
-        <h2 class="sectionHobbies">Hobbies</h2>
+        <h2 class="sectionHobbies__title">Hobbies</h2>
       </header>
       <div class="sectionHobbies__gallery gallery">
         <!-- skill 1 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/skate_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/skate_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">Html 5</figcaption>
         </figure>
         <!-- skill 2 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/guitar_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/guitar_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">Javascript</figcaption>
         </figure>
         <!-- skill 3 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/headphones_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/headphones_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">PHP</figcaption>
         </figure>
         <!-- skill 4 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/tv_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/tv_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">Node Js</figcaption>
         </figure>
         <!-- skill 5 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/forkspoon_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/forkspoon_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">React</figcaption>
         </figure>
         <!-- skill 6 -->
         <figure class="gallery__card">
-          <img class="gallery__img" src="./aseets/img/camera_icon.png" alt="tecnología-web">
+          <img class="gallery__img" src="./assets/img/camera_icon.png" alt="tecnología-web">
           <figcaption class="gallery__description">CSS</figcaption>
         </figure>
       </div>
@@ -166,21 +174,27 @@
       </header>
       <div class="sectionStudy__container">
         <article class="studyCard card">
-          <img src="./aseets/img/ufpr_logo.png" alt="estudios" class="card__img">
+          <div class="card__containerImg">
+            <img src="./assets/img/ufpr_logo.png" alt="estudios" class="card__img">
+          </div>
           <h3 class="card__title">Análisis de datos</h3>
           <p class="card__info">
             <time datetime="2018">2018</time> - UFRP
           </p>
         </article>
         <article class="studyCard card">
-          <img src="./aseets/img/alura_logo.png" alt="estudios" class="card__img">
+          <div class="card__containerImg">
+            <img src="./assets/img/alura_logo.png" alt="estudios" class="card__img">
+          </div>
           <h3 class="card__title">Formación en UX Design</h3>
           <p class="card__info">
             <time datetime="2019">2019</time> - Alura
           </p>
         </article>
         <article class="studyCard card">
-          <img src="./aseets/img/ufrj_logo.png" alt="estudios" class="card__img">
+          <div class="card__containerImg">
+            <img src="./assets/img/ufrj_logo.png" alt="estudios" class="card__img">
+          </div>
           <h3 class="card__title">Posgrado en design</h3>
           <p class="card__info">
             En curso - UFRJ
@@ -193,74 +207,74 @@
       <header>
         <h2 class="workSection__title">Experiencia profesional</h2>
       </header>
-      <div class="workSection__containerWork containerWork">
+      <div class="workSection__containerWork">
         <!-- work 1 -->
         <article class="containerWork">
-          <img src="./aseets/img/decod_print.png" alt="proyecto1" class="containerWork__img">
+          <img src="./assets/img/decod_print.png" alt="proyecto1" class="containerWork__img">
           <h3 class="containerWork__title">Encriptador de texto</h3>
           <span class="containerWork__info">Challenge Oracle</span>
           <div class="containerWork__containerBtn">
-            <button class="containerBtn__btn containerBtn__btn--bgBlue"></button>
-            <button class="containerBtn__btn containerBtn__btn--bgBlue"></button>
+            <button class="containerBtn__btn">Repositorio</button>
+            <button class="containerBtn__btn containerBtn__btn--bgBlue">Ver demo</button>
           </div>
         </article>
         <!-- work 2 -->
         <article class="containerWork">
-          <img src="./aseets/img/forca_print.png" alt="proyecto2" class="containerWork__img">
-          <h3 class="containerWork__title">Juego creado con HTML, CSS y JavaScript</h3>
+          <img src="./assets/img/forca_print.png" alt="proyecto2" class="containerWork__img">
+          <h3 class="containerWork__title">Juego creado con HTML y JavaScript</h3>
           <span class="containerWork__info">Challenge Oracle</span>
           <div class="containerWork__containerBtn">
-            <button class="containerBtn__btn containerBtn__btn--bgBlue"></button>
-            <button class="containerBtn__btn containerBtn__btn--bgBlue"></button>
+            <button class="containerBtn__btn">Repositorio</button>
+            <button class="containerBtn__btn containerBtn__btn--bgBlue">Ver demo</button>
           </div>
         </article>
         <!-- work 3 -->
         <article class="containerWork">
-          <img src="./aseets/img/secretcode_print.png" alt="proyecto3" class="containerWork__img">
+          <img src="./assets/img/secretcode_print.png" alt="proyecto3" class="containerWork__img containerWork__img--bgGray">
           <h3 class="containerWork__title">Encriptador de texto</h3>
           <span class="containerWork__info">Challenge Oracle</span>
           <div class="containerWork__containerBtn">
-            <button class="containerBtn__btn containerBtn__btn--bgBlue"></button>
-            <button class="containerBtn__btn containerBtn__btn--bgBlue"></button>
+            <button class="containerBtn__btn">Repositorio</button>
+            <button class="containerBtn__btn containerBtn__btn--bgBlue">Ver demo</button>
           </div>
         </article>
         <!-- work 4 -->
         <article class="containerWork">
-          <img src="./aseets/img/forca2_print.png" alt="proyecto4" class="containerWork__img">
+          <img src="./assets/img/forca2_print.png" alt="proyecto4" class="containerWork__img">
           <h3 class="containerWork__title">Juego creado con HTML, CSS y JavaScript</h3>
           <span class="containerWork__info">Challenge Oracle</span>
           <div class="containerWork__containerBtn">
-            <button class="containerBtn__btn containerBtn__btn--bgBlue"></button>
-            <button class="containerBtn__btn containerBtn__btn--bgBlue"></button>
+            <button class="containerBtn__btn">Repositorio</button>
+            <button class="containerBtn__btn containerBtn__btn--bgBlue">Ver demo</button>
           </div>
         </article>
       </div>
     </section>
     <!-- contacto -->
-    <section>
+    <section class="contactsSection">
       <header>
-        <h2>Contacto</h2>
-        <div>
-          <span>¿Quieres contactarme?</span>
-          <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+        <h2 class="contactsSection__title">Contacto</h2>
+        <div class="contactsSection__Info">
+          <span class="contactsSection__question">¿Quieres contactarme?</span>
+          <p class="contactsSection__answer">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
         </div>
       </header>
-      <form action="#" method="get">
-        <div class="containerQuestion">
-          <label for="name" class="containerQuestion__label">Nombre</label>
-          <input id="name" name="name" type="text" class="containerQuestion__input">
+      <form class="form" action="#" method="get">
+        <div class="form__containerQuestion">
+          <label for="name" class="form__question">Nombre</label>
+          <input id="name" name="name" type="text" class="form__answer">
         </div>
         <div class="containerQuestion">
-          <label for="email" class="containerQuestion__label">E-mail</label>
-          <input id="email" name="email" type="text" class="containerQuestion__input">
+          <label for="email" class="form__question">E-mail</label>
+          <input id="email" name="email" type="text" class="form__answer">
         </div>
         <div class="containerQuestion">
-          <label for="reason" class="containerQuestion__label">Asunto</label>
-          <input id="reason" name="reason" type="text" class="containerQuestion__input">
+          <label for="reason" class="form__question">Asunto</label>
+          <input id="reason" name="reason" type="text" class="form__answer">
         </div>
         <div class="containerQuestion">
-          <label for="message" class="containerQuestion__label">Mensaje</label>
-          <textarea name="message" id="message" cols="30" rows="10" class="containerQuestion__input"></textarea>
+          <label for="message" class="form__question">Mensaje</label>
+          <textarea name="message" id="message" cols="30" rows="10" class="form__answer"></textarea>
         </div>
         <button>Enviar mensaje</button>
       </form>

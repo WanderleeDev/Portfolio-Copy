@@ -347,8 +347,20 @@ template {
 [hidden] {
   display: none;
 }
-
-ul,ol{
+/* Quita el padding x defecto de las listas */
+ul,ol {
   list-style: none;
   padding: 0px;
+}
+/* Elimina el subrayado de los links */
+a {
+  text-decoration: none;
+}
+img{
+  height: auto;
+}
+/* Elimina el padding y margin de figure */
+figure{
+  padding: 0;
+  margin: 0;
 }
