@@ -39,7 +39,8 @@
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  background: url(/assets/img/vector.png);
+  background: url(./assets/img/vector.png);
+  background-size: cover;
 }
 .navbar__link{
   color: var(--textColor1);
@@ -275,7 +276,7 @@
 .form__answer:hover{
   box-shadow: 0px 2px 0px  rgba(42,122,228,1);
 }
-.form__answer--reziseNone{
+.form__answer--resizeNone{
   resize: none;
 }
 .form__btn{
