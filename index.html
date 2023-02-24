@@ -50,31 +50,33 @@
   <main class="mainContent">
     <!-- Presentación -->
     <section class="sectionPresentation">
-      <header>
-        <img class="sectionPresentation__myPhoto" src="./assets/img/profile.png" alt="mi foto personal">
-        <h1 class="sectionPresentation__title">Hola mi nombre es Fulana de Tal y construyo paginas web</h1>
-      </header>
-      <div class="sectionPresentation__description">
-        Soy formada en lorem ipsum  sit amet consectetur y actualmente estoy participando en el proyecto Oracle One en Alura Latam.
+      <img class="sectionPresentation__myPhoto" src="./assets/img/profile.png" alt="mi foto personal">
+      <div>
+        <header>
+          <h1 class="sectionPresentation__title">Hola mi nombre es Fulana de Tal y construyo paginas web</h1>
+        </header>
+        <div class="sectionPresentation__description">
+          Soy formada en lorem ipsum  sit amet consectetur y actualmente estoy participando en el proyecto Oracle One en Alura Latam.
+        </div>
+        <ul class="socialMedia">
+          <li class="socialMedia__item">
+            <a href="#" class="socialMedia__link">Github</a>
+            <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
+          </li>
+          <li class="socialMedia__item">
+            <a href="#" class="socialMedia__link">LinkedIn</a>
+            <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
+          </li>
+          <li class="socialMedia__item">
+            <a href="#" class="socialMedia__link">Instagram</a>
+            <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
+          </li>
+          <li class="socialMedia__item">
+            <a href="#" class="socialMedia__link">Currículo</a>
+            <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
+          </li>
+        </ul>
       </div>
-      <ul class="socialMedia">
-        <li class="socialMedia__item">
-          <a href="#" class="socialMedia__link">Github</a>
-          <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
-        </li>
-        <li class="socialMedia__item">
-          <a href="#" class="socialMedia__link">LinkedIn</a>
-          <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
-        </li>
-        <li class="socialMedia__item">
-          <a href="#" class="socialMedia__link">Instagram</a>
-          <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
-        </li>
-        <li class="socialMedia__item">
-          <a href="#" class="socialMedia__link">Currículo</a>
-          <img class="socialMedia__icon" src="./assets/img/arrow.png" alt="icon direccional">
-        </li>
-      </ul>
     </section>
     <!-- sobre mí -->
     <section class="sectionAboutMe">
@@ -213,7 +215,7 @@
         <!-- work 1 -->
         <article class="containerWork">
           <img src="./assets/img/decod_print.png" alt="proyecto1" class="containerWork__img">
-          <div>
+          <div class="containerWork__data">
             <h3 class="containerWork__title">Encriptador de texto</h3>
             <span class="containerWork__info">Challenge Oracle</span>
             <div class="containerWork__containerBtn">
@@ -223,9 +225,9 @@
           </div>
         </article>
         <!-- work 2 -->
-        <article class="containerWork">
+        <article class="containerWork containerWork--rowReverse">
           <img src="./assets/img/forca_print.png" alt="proyecto2" class="containerWork__img">
-          <div>
+          <div class="containerWork__data">
             <h3 class="containerWork__title">Juego creado con HTML y JavaScript</h3>
             <span class="containerWork__info">Challenge Oracle</span>
             <div class="containerWork__containerBtn">
@@ -237,7 +239,7 @@
         <!-- work 3 -->
         <article class="containerWork">
           <img src="./assets/img/secretcode_print.png" alt="proyecto3" class="containerWork__img containerWork__img--bgGray">
-          <div>
+          <div class="containerWork__data">
             <h3 class="containerWork__title">Encriptador de texto</h3>
             <span class="containerWork__info">Challenge Oracle</span>
             <div class="containerWork__containerBtn">
@@ -247,9 +249,9 @@
           </div>
         </article>
         <!-- work 4 -->
-        <article class="containerWork">
+        <article class="containerWork containerWork--rowReverse">
           <img src="./assets/img/forca2_print.png" alt="proyecto4" class="containerWork__img">
-          <div>
+          <div class="containerWork__data">
             <h3 class="containerWork__title">Juego creado con HTML, CSS y JavaScript</h3>
             <span class="containerWork__info">Challenge Oracle</span>
             <div class="containerWork__containerBtn">
@@ -262,32 +264,35 @@
     </section>
     <!-- contacto -->
     <section class="contactsSection">
-      <header>
-        <h2 class="contactsSection__title">Contacto</h2>
-        <div class="contactsSection__Info">
-          <span class="contactsSection__question">¿Quieres contactarme?</span>
-          <p class="contactsSection__answer">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
-        </div>
-      </header>
-      <form class="form" action="/.asa" method="get">
-        <div class="form__containerQuestion">
-          <label for="name" class="form__question">Nombre</label>
-          <input id="name" name="name" type="text" class="form__answer">
-        </div>
-        <div class="form__containerQuestion">
-          <label for="email" class="form__question">E-mail</label>
-          <input id="email" name="email" type="text" class="form__answer">
-        </div>
-        <div class="form__containerQuestion">
-          <label for="reason" class="form__question">Asunto</label>
-          <input id="reason" name="reason" type="text" class="form__answer">
-        </div>
-        <div class="form__containerQuestion">
-          <label for="message" class="form__question">Mensaje</label>
-          <textarea name="message" id="message" cols="30" rows="10" class="form__answer"></textarea>
-        </div>
-        <button class="form__btn" type="submit">Enviar mensaje</button>
-      </form>
+      <div>
+        <header>
+          <h2 class="contactsSection__title">Contacto</h2>
+          <div class="contactsSection__Info">
+            <span class="contactsSection__question">¿Quieres contactarme?</span>
+            <p class="contactsSection__answer">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+          </div>
+        </header>
+        <form class="form" action="/.asa" method="get">
+          <div class="form__containerQuestion">
+            <label for="name" class="form__question">Nombre</label>
+            <input id="name" name="name" type="text" class="form__answer">
+          </div>
+          <div class="form__containerQuestion">
+            <label for="email" class="form__question">E-mail</label>
+            <input id="email" name="email" type="text" class="form__answer">
+          </div>
+          <div class="form__containerQuestion">
+            <label for="reason" class="form__question">Asunto</label>
+            <input id="reason" name="reason" type="text" class="form__answer">
+          </div>
+          <div class="form__containerQuestion">
+            <label for="message" class="form__question">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="10" class="form__answer form__answer--reziseNone"></textarea>
+          </div>
+          <button class="form__btn" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+      <img class="contactsSection__img" src="./assets/img/contact_image.png" alt="Imagen de contacto">
     </section>
   </main>
   <footer class="footerPage">
