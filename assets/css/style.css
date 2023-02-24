@@ -39,7 +39,7 @@
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  background: url(./assets/img/vector.png);
+  background: url("/assets/img/vector.png");
   background-size: cover;
 }
 .navbar__link{
